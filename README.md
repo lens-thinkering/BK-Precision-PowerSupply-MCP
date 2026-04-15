@@ -1,3 +1,5 @@
+WIP! Initial scaffolding done. Next step is to test on various BK hardware.
+
 # BK Precision MCP
 
 MCP server for controlling BK Precision test and measurement instruments via SCPI. Exposes 27 tools covering power supplies, multimeters, oscilloscopes, and function generators over USB, Ethernet, and RS-232.
