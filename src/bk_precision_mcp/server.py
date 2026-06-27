@@ -2,21 +2,12 @@
 
 from mcp.server.fastmcp import FastMCP
 
-from bk_precision_mcp.tools import (
-    discovery,
-    function_gen,
-    multimeter,
-    oscilloscope,
-    power_supply,
-)
+from bk_precision_mcp.tools import connection, power_supply
 
-mcp = FastMCP("BK Precision Instruments")
+mcp = FastMCP("BK Precision Power Supplies")
 
-discovery.register(mcp)
+connection.register(mcp)
 power_supply.register(mcp)
-multimeter.register(mcp)
-oscilloscope.register(mcp)
-function_gen.register(mcp)
 
 
 def main() -> None:
